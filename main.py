@@ -38,11 +38,11 @@ for osaka_event in osaka_events:
                 + str(started_at.day) + "日"
                 + ["(月)", "(火)", "(水)", "(木)", "(金)", "(土)", "(日)"][started_at.weekday()]
                 + str(started_at.hour) + "時"
-                + str(started_at.minute)
-                + ("0" if started_at.minute==0 else "") + "分" + "~"
+                + ("0" if started_at.minute==0 else "")
+                + str(started_at.minute) + "分" + "~"
                 + str(ended_at.hour) + "時"
-                + str(ended_at.minute)
-                + ("0" if ended_at.minute==0 else "") + "分"
+                + ("0" if ended_at.minute==0 else "")
+                + str(ended_at.minute) + "分"
                 + "\n"
         )
     else:
@@ -52,15 +52,15 @@ for osaka_event in osaka_events:
                 + str(started_at.day) + "日"
                 + ["(月)", "(火)", "(水)", "(木)", "(金)", "(土)", "(日)"][started_at.weekday()]
                 + str(started_at.hour) + "時"
-                + str(started_at.minute)
-                + ("0" if ended_at.minute==0 else "") + "分" + "~"
+                + ("0" if started_at.minute==0 else "")
+                + str(started_at.minute) + "分" + "~"
                 + str(ended_at.year) + "年"
                 + str(ended_at.month) + "月"
                 + str(ended_at.day) + "日"
                 + ["(月)", "(火)", "(水)", "(木)", "(金)", "(土)", "(日)"][started_at.weekday()]
                 + str(ended_at.hour) + "時"
-                + str(ended_at.minute)
-                + ("0" if ended_at.minute==0 else "") + "分"
+                + ("0" if ended_at.minute==0 else "")
+                + str(ended_at.minute) + "分"
                 + "\n"
         )
     title = title + "\n"
